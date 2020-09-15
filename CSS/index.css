@@ -1,0 +1,12 @@
+body {
+  background-color: #000000;
+}
+
+body > main > div.container > div.row > h3 {
+  color: red;
+}
+
+body > footer > div.container h3 {
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */

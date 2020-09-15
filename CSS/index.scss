@@ -1,0 +1,75 @@
+body
+{
+    background-color: #000000;
+    &>header
+    {
+        &>div.container
+        {
+            &>div.row
+            {
+               &>div.sonic
+               {
+                    &>img 
+                    {
+                        
+                    }
+               }
+               &>nav.menu
+               {
+                    
+               }
+            }
+        }
+    }
+    &>main
+    {
+        &>div.container
+        {
+            &>h2
+            {
+                
+            }
+            &>div.tabela
+            {
+                &>table
+                {
+                    &>tr
+                    {
+                        &>th
+                        {
+                            
+                        }
+                    }
+                }
+            }
+            &>div.row
+            {
+                &>div.ps5
+                {
+                    &>img.imgPS5
+                    {
+                        
+                    }
+                } 
+                &>h3
+                {
+                    color: red;
+                }  
+                &>p
+                {
+
+                }
+            }
+        }
+    }
+    &>footer 
+    {
+        &>div.container
+        {
+            h3
+            {
+                color: red;
+            }
+        }
+    }
+}
