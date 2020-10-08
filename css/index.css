@@ -1,0 +1,13 @@
+body {
+  background-color: #FFF;
+}
+
+body > header > div.container > div.row > div.sonic > img {
+  width: 100%;
+}
+
+body > footer > div.container > div.row > div > form > input {
+  display: block;
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */

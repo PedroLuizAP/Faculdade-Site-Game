@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+    
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -20,17 +23,15 @@
                 <div class="col-3">
                     <h1>&lt;Games&gt;</h1>
                 </div>
-                <div class="sonic col-1">
-                    <img width=40 height=45
-                        src="./imagem/icone-sonic.png"
-                        alt="Sonic">
+                <div class="sonic col-3">
+                    <i class="fas fa-gamepad fa-4x"></i>
                 </div>
-                <div class="col-8">
+                <div class="col-6">
                     <nav class="menu">
                         <ul>
-                            <li><a href="#Inicio">Inicio</a></li>
-                            <li><a href="#Games">Games</a></li>
-                            <li><a href="#Sobre">Contato</a></li>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#games">Games</a></li>
+                            <li><a href="#sobre">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +42,7 @@
         <div class="container">
             <h2>TOP Jogos</h2>
             <div class="tabela">
-                <a name="inicio" />
+                <a name="inicio"></a>
                 <table class="table table-dark table-striped table-border table-hover">
 
                     <tr>
@@ -67,11 +68,11 @@
                     </tr>
 
                     <tr>
-                        <td>HearthStone</td>
-                        <td>9.8</td>
+                        <td>Chrono Trigger</td>
+                        <td>* imagem vegeta é mais de 8 mil</td>
                         <td><img width=40 height=45
-                            src="./imagem/hearth-stone.jpg"
-                            alt="HS"></td>
+                            src="caminho imagem"
+                            alt="Chrono"></td>
                     </tr>
 
                     <td colspan="3">
@@ -98,7 +99,7 @@
             </div>
         </div>
         <div class="container">
-            <a name="games" />
+            <a name="games"></a>
             <h3>Sobre League of Legens</h3>
             <p><a href="./Sobre/league/index.html">Veja mais sobre League of Legends</a></p>
             <div class="row">
@@ -118,22 +119,38 @@
     </main>
     <footer>
         <div class="container">
-            <h3>Sobre nós</h3>
-            <a name="sobre" />
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia et dolor ac aliquet. Aliquam cursus
-                arcu
-                eros, vitae porta nisi vulputate non. Nullam posuere congue urna non ultricies. Aenean ac ultricies purus.
-                Donec
-                sit amet bibendum quam. Maecenas eget lorem vitae velit porttitor placerat non at purus. Aliquam facilisis
-                finibus ipsum, in ultricies velit porttitor ut. In finibus blandit tortor, eu cursus risus ultricies in.
-                Suspendisse a libero eget tortor scelerisque vulputate. Sed mattis, mauris nec interdum ultricies, felis
-                nulla
-                dictum nibh, quis vestibulum felis dui nec dui. Vivamus efficitur turpis velit, at dapibus odio ultricies
-                at.
-                Fusce dolor nisl, dignissim interdum purus id, cursus efficitur neque. Nullam luctus ex a urna ultrices, nec
-                interdum mi gravida.
-            </p>
+            <a name="sobre"></a>
+            <div class="row">
+                <div class="col-6">
+                    <h3>Sobre nós</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia et dolor ac aliquet. Aliquam cursus
+                        arcu
+                        eros, vitae porta nisi vulputate non. Nullam posuere congue urna non ultricies. Aenean ac ultricies purus.
+                        Donec
+                        sit amet bibendum quam. Maecenas eget lorem vitae velit porttitor placerat non at purus. Aliquam facilisis
+                        finibus ipsum, in ultricies velit porttitor ut. In finibus blandit tortor, eu cursus risus ultricies in.
+                        Suspendisse a libero eget tortor scelerisque vulputate. Sed mattis, mauris nec interdum ultricies, felis
+                        nulla
+                        dictum nibh, quis vestibulum felis dui nec dui. Vivamus efficitur turpis velit, at dapibus odio ultricies
+                        at.
+                        Fusce dolor nisl, dignissim interdum purus id, cursus efficitur neque. Nullam luctus ex a urna ultrices, nec
+                        interdum mi gravida.
+                    </p>
+                </div>
+
+                <div class="col-6">
+                    <h2>Sugira um jogo</h2>
+                    <form action="/enviar" method="POST">
+
+                        <input type="text" name="nome" placeholder="Nome do Jogo" />
+                        <input type="url" name="link" placeholder="www.linkdojogo.com.br" />
+                        <input type="text" name="descricao" placeholder="Descrição do Jogo" />
+                        <button type="submit"> Enviar</button>
+
+                    </form>
+                </div>
+            </div>
         </div>
     </footer>
 
