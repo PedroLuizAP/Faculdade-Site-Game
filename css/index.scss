@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body
 {
-    background-color:#FFF;
+    background-color: rgba(24,24,24,1);
+    color: #FFF;
+    font-size: 17px;
+    padding-top: 70px;
     &>header
     {
+        background-color: rgba(28,28,28,0.8);
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+
         &>div.container
         {
             &>div.row
@@ -12,11 +23,33 @@ body
                     &>img 
                     {
                         width: 100%;
+                        margin: 10px 0;
                     }
                }
                nav.menu
                {
-                    
+                    width: 100%;
+                    &>ul 
+                    {
+                        widows: 100px;
+                        margin: 0;
+                        padding: 21px 0;
+                        list-style: nome;
+                        text-align: right;
+                    &>li 
+                    {
+                        display: inline-block;
+                        margin-left: 25px;
+                        
+                        &.inicio
+                        {
+                            &>a 
+                            {
+                                color: #FFF
+                            }
+                        }
+                    }
+                    }
                }
             }
         }
@@ -61,6 +94,34 @@ body
                 }
             }
         }
+        &>div.container
+        {
+            &>div.row
+            {
+                &>div.video-1
+                {
+                    display: inline-block;
+                    text-align: left;  
+                    padding-top: 25px;  
+                    padding-left: 0px;
+                    padding-right: 60px;
+                    padding-bottom: 25px;
+                    
+                }
+                &>div.video-2
+                {
+                    display: inline-block;
+                    text-align: right;    
+                    padding-top: 25px;  
+                    padding-left: 60px;
+                    padding-right: 0px;
+                    padding-bottom: 25px;
+                    
+                }
+
+            }
+        }
+
     }
 
     &>footer 
@@ -83,6 +144,20 @@ body
 
                 }
            }
+        }
+        &>div.copyright 
+        {
+            &>div.container 
+            {
+                &>div.row
+                {
+                    &>div 
+                    {
+                        background-color: #FFF;
+                        color: black;
+                    }
+                }
+            }
         }
     }
 }
