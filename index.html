@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -140,14 +140,15 @@
 
                 <div class="col-6">
                     <h2>Sugira um jogo</h2>
-                    <form action="/enviar" method="POST">
-
-                        <input type="text" name="nome" placeholder="Nome do Jogo" />
-                        <input type="url" name="link" placeholder="www.linkdojogo.com.br" />
-                        <textarea class="descricao" type="text" name="descricao" placeholder="Descrição do Jogo" ></textarea>
-                        <button type="submit"> Enviar</button>
-
-                    </form>
+                  <form action="/enviar" id="form" method="POST">
+                        <div id="aviso" class=""></div>
+                        <input type="text" name="nome" id="nome"  placeholder="Nome do Jogo" />
+                        <input type="url" name="link" id="url" placeholder="www.linkdojogo.com.br" />
+                        <textarea id="msg"  name="descricao" placeholder="Descrição do Jogo" ></textarea>
+                        <div class="botao">
+                            <button type="submit" id="btnEnviar"> Enviar</button>
+                        </div>
+                    </form>         
                 </div>
             </div>
         </div> 
@@ -171,6 +172,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
