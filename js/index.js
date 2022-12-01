@@ -46,7 +46,6 @@ $(document).ready(function() {
             }
         }
 
-        //return preenchido;
-        return false; //retornando falso para simular o formulario enviado
+        return false; 
     });
 });
